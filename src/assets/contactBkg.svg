@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <g id="Contact-bkg" transform="translate(0 -3240)">
+    <rect id="Contact-container" width="1920" height="1080" transform="translate(0 3240)" fill="#1b1e32"/>
+    <path id="email-img" d="M172.181,6H21.8a18.773,18.773,0,0,0-18.7,18.8L3,137.585a18.853,18.853,0,0,0,18.8,18.8H172.181a18.853,18.853,0,0,0,18.8-18.8V24.8A18.853,18.853,0,0,0,172.181,6Zm0,37.6L96.989,90.59,21.8,43.6V24.8L96.989,71.792,172.181,24.8Z" transform="translate(1522.147 3293.22) rotate(16)" fill="#141628"/>
+  </g>
+</svg>

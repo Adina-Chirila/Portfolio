@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Assets">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Assets" clip-path="url(#clip-Assets)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g id="Group_38" data-name="Group 38" transform="translate(0 78)">
+      <circle id="Ellipse_465" data-name="Ellipse 465" cx="41" cy="41" r="41" transform="translate(109 138)" fill="#ff003b"/>
+      <circle id="Ellipse_467" data-name="Ellipse 467" cx="41" cy="41" r="41" transform="translate(109 380)" fill="#1b1e32"/>
+      <circle id="Ellipse_466" data-name="Ellipse 466" cx="41" cy="41" r="41" transform="translate(109 259)" fill="#141628"/>
+      <text id="_1B1E32" data-name="#1B1E32" transform="translate(214 436)" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">#1B1E32</tspan></text>
+      <text id="_FF003B" data-name="#FF003B" transform="translate(214 194)" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">#FF003B</tspan></text>
+      <text id="_141628" data-name="#141628" transform="translate(214 315)" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">#141628</tspan></text>
+      <text id="COLORS" transform="translate(109 69)" font-size="50" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">COLORS</tspan></text>
+    </g>
+    <g id="Group_39" data-name="Group 39" transform="translate(707 78)">
+      <text id="Montserrat" transform="translate(109 178)" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Montserrat</tspan></text>
+      <text id="FONTS" transform="translate(109 69)" font-size="50" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">FONTS</tspan></text>
+    </g>
+  </g>
+</svg>
