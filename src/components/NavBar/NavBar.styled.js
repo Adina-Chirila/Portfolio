@@ -3,12 +3,14 @@ import { colors } from "../../shared/colors";
 
 export const Header = styled.header`
     padding: 1.2em 0;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
     position: fixed;
     top: 0;
     width: 100%;
     background-color: ${colors.deepDarkBlue};
     color: ${colors.white};
+    z-index: 1;
 `;
 
 export const Navigation = styled.div`
@@ -39,7 +41,7 @@ export const NavLinksWrapper = styled.div`
             transform: scale(0, 1);
             transform-origin: 0% 100%;
             border-radius: 1em;
-            transition: transform 0.4s ease-in-out;
+            transition: transform 0.2s ease-in-out;
         }
 
         &:hover::after {
@@ -56,7 +58,7 @@ export const SocialLinksWrapper = styled.div`
     .socialLink {
         margin-left: 1.5em;
         cursor: pointer;
-        transition: color 0.4s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
     .socialLink:hover {
