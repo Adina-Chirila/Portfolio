@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../shared/colors";
 
 export const Header = styled.header`
-    padding: 1.2em 0;
+    padding: 1em 0;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
     /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
     position: fixed;

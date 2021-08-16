@@ -22,7 +22,7 @@ const NavBar = () => {
                             to="home"
                             smooth={true}
                             duration={1000}
-                            offset={-80}
+                            offset={-83}
                             className="navLink"
                         >
                             Home
@@ -31,7 +31,7 @@ const NavBar = () => {
                             to="about"
                             smooth={true}
                             duration={1000}
-                            offset={-80}
+                            offset={-83}
                             className="navLink"
                         >
                             About
@@ -40,7 +40,7 @@ const NavBar = () => {
                             to="projects"
                             smooth={true}
                             duration={1000}
-                            offset={-80}
+                            offset={-83}
                             className="navLink"
                         >
                             Projects
@@ -49,7 +49,7 @@ const NavBar = () => {
                             to="contact"
                             smooth={true}
                             duration={1000}
-                            offset={-80}
+                            offset={-83}
                             className="navLink"
                         >
                             Contact

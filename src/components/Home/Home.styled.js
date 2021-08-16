@@ -7,7 +7,6 @@ export const HeroSection = styled.div`
     height: calc(100vh - ${dimensions.navBarHeight});
     background-color: ${colors.deepDarkBlue};
     margin-top: ${dimensions.navBarHeight};
-    color: ${colors.white};
 `;
 
 export const FlexContainer = styled(Container)`

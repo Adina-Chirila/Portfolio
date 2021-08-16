@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
+
+  body{
+    color: ${colors.white};
+  }
   `;
 
 export const Container = styled.div`

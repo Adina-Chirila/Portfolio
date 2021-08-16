@@ -1,4 +1,4 @@
 export const dimensions = {
-    navBarHeight: "80px",
-    offset: "-80",
+    navBarHeight: "83px",
+    offset: "-83",
 };
