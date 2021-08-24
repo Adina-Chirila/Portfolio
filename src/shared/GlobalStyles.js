@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body{
     color: ${colors.white};
+    /* background-color: pink; */
   }
   `;
 

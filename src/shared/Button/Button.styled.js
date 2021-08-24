@@ -50,3 +50,26 @@ export const CtaBtn = styled.button`
         font-size: 17px;
     }
 `;
+
+export const BasicCtaBtn = styled.button`
+    font-size: 15px;
+    color: ${colors.white};
+    border: 2px solid ${colors.primaryPink};
+    border-radius: 5px;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: ${colors.primaryPink};
+    }
+`;

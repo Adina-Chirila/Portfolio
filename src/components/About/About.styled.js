@@ -19,7 +19,8 @@ export const AboutContainer = styled(Container)`
     }
 
     .about-title {
-        font-size: 45px;
+        font-size: 35px;
+        margin: 0 0 0.5em 0;
     }
 
     p,
