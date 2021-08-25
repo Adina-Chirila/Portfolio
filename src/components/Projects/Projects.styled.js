@@ -37,7 +37,7 @@ export const ProjectCard = styled.div`
     padding: 1em 1.5em;
     background-color: ${colors.darkBlue};
     border-radius: 5px;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 
     p {
         font-size: 12px;
@@ -68,6 +68,11 @@ export const TitleWrapper = styled.div`
 
     .external-link {
         color: ${colors.primaryPink};
+        /* transition: all 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        } */
     }
 
     h5 {
