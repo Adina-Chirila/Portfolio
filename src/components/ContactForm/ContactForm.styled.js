@@ -4,12 +4,12 @@ import { colors } from "../../shared/colors";
 import { dimensions } from "../NavBar/dimensions";
 
 export const ContactSection = styled.div`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
     background-color: ${colors.darkBlue};
 `;
 
 export const ContactContainer = styled(Container)`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
     display: flex;
     flex-direction: column;
 

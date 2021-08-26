@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Container } from "../../shared/GlobalStyles";
 import {
@@ -10,15 +10,34 @@ import {
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import logo from "../../assets/logo.svg";
 import { dimensions } from "../NavBar/dimensions";
+import { navLinks } from "../../data";
 
 const NavBar = () => {
+    
+
     return (
         <Header>
             <Container>
                 <Navigation>
-                    <img src={logo} alt="logo" />
+                    <Link to="home" smooth={true} duration={1000} offset={-83}>
+                        <img src={logo} alt="logo" className="logo" />
+                    </Link>
                     <NavLinksWrapper>
-                        <Link
+                    {navLinks.map((link,index)=>{
+                        return(
+                            <Link key={index}
+                            to={link}
+                            smooth={true}
+                            duration={1000}
+                            offset={-83}
+                            className="navLink"
+                        >
+                            {link}
+                        </Link>
+)
+                    })}
+                   
+                        {/* <Link
                             to="home"
                             smooth={true}
                             duration={1000}
@@ -53,12 +72,24 @@ const NavBar = () => {
                             className="navLink"
                         >
                             Contact
-                        </Link>
+                        </Link> */}
                     </NavLinksWrapper>
 
                     <SocialLinksWrapper>
-                        <AiFillGithub className="socialLink" size={20} />
-                        <AiFillLinkedin className="socialLink" size={20} />
+                        <a
+                            href="https://github.com/Adina-Chirila"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiFillGithub className="socialLink" size={20} />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/adina-elena-chirila/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiFillLinkedin className="socialLink" size={20} />
+                        </a>
                     </SocialLinksWrapper>
                 </Navigation>
             </Container>

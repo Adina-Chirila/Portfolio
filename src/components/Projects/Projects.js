@@ -18,9 +18,9 @@ const Projects = () => {
             <ProjectsContainer>
                 <h1>Projects</h1>
                 <ProjectsThumbnail>
-                    {projectCardsInfo.map((card) => {
+                    {projectCardsInfo.map((card,index) => {
                         return (
-                            <ProjectCard>
+                            <ProjectCard key={index}>
                                 <TitleWrapper>
                                     <a
                                         href={card.gitHubLink}
@@ -49,8 +49,8 @@ const Projects = () => {
                                 </TitleWrapper>
                                 <p>{card.description}</p>
                                 <div className="techs">
-                                    {card.tech.map((tech) => {
-                                        return <span>{tech}</span>;
+                                    {card.tech.map((tech,index) => {
+                                        return <span key={index}>{tech}</span>;
                                     })}
                                 </div>
                             </ProjectCard>

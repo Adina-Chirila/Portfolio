@@ -3,6 +3,7 @@ import { CtaBtn } from "../../shared/GlobalStyles";
 import { FlexContainer, HeroSection } from "./Home.styled";
 import { ReactComponent as HeroImage } from "../../assets/heroImg.svg";
 import Button from "../../shared/Button/Button";
+import { Link } from "react-scroll";
 
 const Home = () => {
     return (
@@ -15,7 +16,14 @@ const Home = () => {
                     <h2 className="secondary-hero-headline">a self-taught</h2>
                     <h1 className="hero-headline">front-end developer</h1>
                     {/* <CtaBtn>VIEW PROJECTS</CtaBtn> */}
-                    <Button />
+                    <Link
+                        to="projects"
+                        smooth={true}
+                        duration={1000}
+                        offset={-83}
+                    >
+                        <Button />
+                    </Link>
                 </div>
                 <HeroImage className="hero-column" />
             </FlexContainer>

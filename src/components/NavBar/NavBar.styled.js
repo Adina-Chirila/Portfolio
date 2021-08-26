@@ -17,8 +17,12 @@ export const Header = styled.header`
     z-index: 1;
 `;
 
-export const Navigation = styled.div`
+export const Navigation = styled.nav`
     display: flex;
+
+    .logo {
+        cursor: pointer;
+    }
 `;
 
 export const NavLinksWrapper = styled.div`
@@ -33,6 +37,12 @@ export const NavLinksWrapper = styled.div`
         margin-right: 2.5em;
         padding: 1em 0;
         position: relative;
+        text-transform: capitalize;
+
+        &.active {
+            color: ${colors.primaryPink};
+            transition: 0.3 ease-in-out;
+        }
 
         &::after {
             content: "";
@@ -58,6 +68,10 @@ export const SocialLinksWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    a {
+        color: inherit;
+    }
 
     .socialLink {
         margin-left: 1.5em;

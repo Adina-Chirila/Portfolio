@@ -3,16 +3,9 @@ import { CtaBtn } from "../../shared/GlobalStyles";
 import { ReactComponent as AboutImage } from "../../assets/aboutImg.svg";
 import Button from "../../shared/Button/Button";
 import { AboutContainer, AboutSection } from "./About.styled";
+import { tags } from "../../data";
 
 const About = () => {
-    const tags = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React.js",
-        "Material-UI",
-        "styled-components",
-    ];
     return (
         <AboutSection id="about">
             <AboutContainer>
@@ -43,8 +36,8 @@ const About = () => {
                         Here are the technologies I've been working with so far:
                     </p>
                     <div className="tags">
-                        {tags.map((tag) => {
-                            return <div className="tag">{tag}</div>;
+                        {tags.map((tag,index) => {
+                            return <div className="tag" key={index}>{tag}</div>;
                         })}
                     </div>
                 </div>

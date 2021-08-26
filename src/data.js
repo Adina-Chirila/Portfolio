@@ -53,3 +53,17 @@ export const projectCardsInfo = [
         liveDemo: "https://custom-to-do-app.vercel.app/",
     },
 ];
+
+ export const tags = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Material-UI",
+    "styled-components",
+];
+
+export const navLinks = ["home","about","projects","contact"];
+
+
+    

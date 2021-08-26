@@ -4,13 +4,13 @@ import { colors } from "../../shared/colors";
 import { dimensions } from "../NavBar/dimensions";
 
 export const HeroSection = styled.div`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
     background-color: ${colors.deepDarkBlue};
     margin-top: ${dimensions.navBarHeight};
 `;
 
 export const FlexContainer = styled(Container)`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
     display: flex;
     justify-content: center;
     align-items: center;

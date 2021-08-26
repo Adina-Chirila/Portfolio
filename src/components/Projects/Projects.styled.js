@@ -5,12 +5,12 @@ import { dimensions } from "../NavBar/dimensions";
 import { BasicCtaBtn } from "../../shared/Button/Button.styled";
 
 export const ProjectsSection = styled.div`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
     background-color: ${colors.deepDarkBlue};
 `;
 
 export const ProjectsContainer = styled(Container)`
-    height: calc(100vh - ${dimensions.navBarHeight});
+    min-height: calc(100vh - ${dimensions.navBarHeight});
 
     h1 {
         margin: 0;
