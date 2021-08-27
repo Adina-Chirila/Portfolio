@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactContainer, ContactSection } from "./ContactForm.styled";
 import emailjs from "emailjs-com";
-import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../config/config";
+// import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../config/config";
 import { BasicCtaBtn } from "../../shared/Button/Button.styled";
 
 const Contact = () => {
