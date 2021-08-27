@@ -13,8 +13,6 @@ import { dimensions } from "../NavBar/dimensions";
 import { navLinks } from "../../data";
 
 const NavBar = () => {
-    
-
     return (
         <Header>
             <Container>
@@ -23,20 +21,21 @@ const NavBar = () => {
                         <img src={logo} alt="logo" className="logo" />
                     </Link>
                     <NavLinksWrapper>
-                    {navLinks.map((link,index)=>{
-                        return(
-                            <Link key={index}
-                            to={link}
-                            smooth={true}
-                            duration={1000}
-                            offset={-83}
-                            className="navLink"
-                        >
-                            {link}
-                        </Link>
-)
-                    })}
-                   
+                        {navLinks.map((link, index) => {
+                            return (
+                                <Link
+                                    key={index}
+                                    to={link}
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-83}
+                                    className="navLink"
+                                >
+                                    {link}
+                                </Link>
+                            );
+                        })}
+
                         {/* <Link
                             to="home"
                             smooth={true}

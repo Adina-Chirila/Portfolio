@@ -18,7 +18,7 @@ const Projects = () => {
             <ProjectsContainer>
                 <h1>Projects</h1>
                 <ProjectsThumbnail>
-                    {projectCardsInfo.map((card,index) => {
+                    {projectCardsInfo.map((card, index) => {
                         return (
                             <ProjectCard key={index}>
                                 <TitleWrapper>
@@ -49,7 +49,7 @@ const Projects = () => {
                                 </TitleWrapper>
                                 <p>{card.description}</p>
                                 <div className="techs">
-                                    {card.tech.map((tech,index) => {
+                                    {card.tech.map((tech, index) => {
                                         return <span key={index}>{tech}</span>;
                                     })}
                                 </div>
@@ -58,7 +58,13 @@ const Projects = () => {
                     })}
                 </ProjectsThumbnail>
                 <div className="center">
-                    <BasicCtaBtn>SEE MORE ON GITHUB</BasicCtaBtn>
+                    <a
+                        href="https://github.com/Adina-Chirila"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <BasicCtaBtn>SEE MORE ON GITHUB</BasicCtaBtn>
+                    </a>
                 </div>
             </ProjectsContainer>
         </ProjectsSection>

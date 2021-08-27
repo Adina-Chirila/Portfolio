@@ -68,11 +68,11 @@ export const TitleWrapper = styled.div`
 
     .external-link {
         color: ${colors.primaryPink};
-        /* transition: all 0.5s ease-in-out;
+        transition: all 0.25s ease-in-out;
 
         &:hover {
             transform: scale(1.2);
-        } */
+        }
     }
 
     h5 {

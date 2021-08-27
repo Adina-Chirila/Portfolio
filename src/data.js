@@ -54,7 +54,7 @@ export const projectCardsInfo = [
     },
 ];
 
- export const tags = [
+export const tags = [
     "HTML",
     "CSS",
     "JavaScript",
@@ -63,7 +63,4 @@ export const projectCardsInfo = [
     "styled-components",
 ];
 
-export const navLinks = ["home","about","projects","contact"];
-
-
-    
+export const navLinks = ["home", "about", "projects", "contact"];

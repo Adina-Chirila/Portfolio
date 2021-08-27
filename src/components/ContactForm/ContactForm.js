@@ -5,25 +5,25 @@ import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../config/config";
 import { BasicCtaBtn } from "../../shared/Button/Button.styled";
 
 const Contact = () => {
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs
-            .sendForm({ SERVICE_ID }, { TEMPLATE_ID }, e.target, { USER_ID })
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-        e.target.reset();
-    };
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     emailjs
+    //         .sendForm({ SERVICE_ID }, { TEMPLATE_ID }, e.target, { USER_ID })
+    //         .then(
+    //             (result) => {
+    //                 console.log(result.text);
+    //             },
+    //             (error) => {
+    //                 console.log(error.text);
+    //             }
+    //         );
+    //     e.target.reset();
+    // };
     return (
         <ContactSection id="contact">
             <ContactContainer>
                 <h1>Contact</h1>
-                <form onSubmit={sendEmail}>
+                <form>
                     <div className="row">
                         <label htmlFor="name">Name*</label>
                         <input
