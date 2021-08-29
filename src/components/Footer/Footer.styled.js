@@ -12,6 +12,11 @@ export const FooterSection = styled.footer`
     a {
         margin-left: 0.4em;
         color: ${colors.white};
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: ${colors.primaryPink};
+        }
     }
 
     span {

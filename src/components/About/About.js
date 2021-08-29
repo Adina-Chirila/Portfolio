@@ -9,10 +9,10 @@ const About = () => {
     return (
         <AboutSection id="about">
             <AboutContainer>
-                <AboutImage className="about-column" />
+                <AboutImage className="about-column about-img" />
                 <div className="about-column">
                     <h1 className="about-title">About me</h1>
-                    <p className="about-text">
+                    <p>
                         My interest in Front- end Development started back in
                         2019. After graduating my Master’s Degree and changing a
                         few jobs in fields not related with development, I found
@@ -20,7 +20,7 @@ const About = () => {
                         doing at work and I felt that my potential was not fully
                         used.
                     </p>
-                    <p className="about-text">
+                    <p>
                         Then I realized my professional career should change, so
                         I started looking for fields that I thought could be
                         built on a continuous learning path, and could offer me
@@ -32,12 +32,16 @@ const About = () => {
                         confident that I can be productive in a business and
                         turn my passion into a career.
                     </p>
-                    <p className="about-text">
+                    <p>
                         Here are the technologies I've been working with so far:
                     </p>
                     <div className="tags">
-                        {tags.map((tag,index) => {
-                            return <div className="tag" key={index}>{tag}</div>;
+                        {tags.map((tag, index) => {
+                            return (
+                                <div className="tag" key={index}>
+                                    {tag}
+                                </div>
+                            );
                         })}
                     </div>
                 </div>

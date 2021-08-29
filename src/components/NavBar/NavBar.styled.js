@@ -3,10 +3,7 @@ import { colors } from "../../shared/colors";
 import { dimensions } from "./dimensions";
 
 export const Header = styled.header`
-    /* padding: 1em 0; */
     height: ${dimensions.navBarHeight};
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
     display: flex;
     align-items: center;
     position: fixed;
@@ -32,14 +29,17 @@ export const NavLinksWrapper = styled.div`
     .navLink {
         font-size: 14px;
         cursor: pointer;
-        margin-right: 2.5em;
+        margin-right: 4.7em;
         padding: 1em 0;
         position: relative;
         text-transform: capitalize;
-        &.active {
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
             color: ${colors.primaryPink};
-            transition: 0.3 ease-in-out;
         }
+
+        /*
         &::after {
             content: "";
             position: absolute;
@@ -55,7 +55,10 @@ export const NavLinksWrapper = styled.div`
         }
         &:hover::after {
             transform: scale(1, 1);
-        }
+        } */
+    }
+    .active {
+        color: ${colors.primaryPink};
     }
 `;
 

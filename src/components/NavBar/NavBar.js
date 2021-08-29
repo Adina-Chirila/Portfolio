@@ -20,6 +20,7 @@ const NavBar = () => {
                     <Link to="home" smooth={true} duration={1000} offset={-83}>
                         <img src={logo} alt="logo" className="logo" />
                     </Link>
+                    <div className="mobile-menu"></div>
                     <NavLinksWrapper>
                         {navLinks.map((link, index) => {
                             return (
@@ -30,48 +31,13 @@ const NavBar = () => {
                                     duration={1000}
                                     offset={-83}
                                     className="navLink"
+                                    activeClass="active"
+                                    spy={true}
                                 >
                                     {link}
                                 </Link>
                             );
                         })}
-
-                        {/* <Link
-                            to="home"
-                            smooth={true}
-                            duration={1000}
-                            offset={-83}
-                            className="navLink"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="about"
-                            smooth={true}
-                            duration={1000}
-                            offset={-83}
-                            className="navLink"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            to="projects"
-                            smooth={true}
-                            duration={1000}
-                            offset={-83}
-                            className="navLink"
-                        >
-                            Projects
-                        </Link>
-                        <Link
-                            to="contact"
-                            smooth={true}
-                            duration={1000}
-                            offset={-83}
-                            className="navLink"
-                        >
-                            Contact
-                        </Link> */}
                     </NavLinksWrapper>
 
                     <SocialLinksWrapper>

@@ -20,7 +20,7 @@ export const projectCardsInfo = [
     {
         title: "Easybank landing page",
         description:
-            "A web app for visualizing job posting, that offers the possibility to filter the opened positions based on multiple criteria.",
+            "A responsive landing page that showcase multiple layout techniques and animations applied on different sections.",
         tech: ["HTML", "CSS", "JavaScript"],
         gitHubLink:
             "https://github.com/Adina-Chirila/frontend-mentor-easybank-landing-page",
@@ -38,7 +38,7 @@ export const projectCardsInfo = [
     {
         title: "Launch countdown",
         description:
-            "A launch countdown timer web app that allows choosing/changing  date and time and saves the inputs to the local storage",
+            "A launch countdown timer web app that allows choosing/changing  date and time and saves the inputs to the local storage.",
         tech: ["HTML", "CSS", "JavaScript", "Moment.js"],
         gitHubLink:
             "https://github.com/Adina-Chirila/frontend-mentor-launch-countdown",
@@ -47,7 +47,7 @@ export const projectCardsInfo = [
     {
         title: "To Do App",
         description:
-            "The app is built on a classic To Do App functionality (add / completed / delete task) with a innovative design. ",
+            "The app is built on a classic To Do App functionality (add / completed / delete task) with an innovative design. ",
         tech: ["HTML", "CSS", "JavaScript"],
         gitHubLink: "https://github.com/Adina-Chirila/to-do-app",
         liveDemo: "https://custom-to-do-app.vercel.app/",

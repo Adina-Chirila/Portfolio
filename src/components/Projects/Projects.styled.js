@@ -16,12 +16,25 @@ export const ProjectsContainer = styled(Container)`
         margin: 0;
         padding: 0.5em;
         font-size: 35px;
+
+        @media (max-width: 950px) {
+            text-align: center;
+            padding: 1em 0;
+        }
     }
 
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        a {
+            margin-bottom: 1em;
+
+            @media (max-width: 690px) {
+                margin-bottom: 2em;
+            }
+        }
     }
 `;
 
@@ -34,6 +47,7 @@ export const ProjectsThumbnail = styled.div`
 
 export const ProjectCard = styled.div`
     width: 30%;
+    min-height: 197px;
     padding: 1em 1.5em;
     background-color: ${colors.darkBlue};
     border-radius: 5px;
@@ -49,6 +63,7 @@ export const ProjectCard = styled.div`
     .techs {
         display: flex;
         align-items: center;
+        margin-top: auto;
 
         span {
             font-size: 12px;
@@ -58,6 +73,17 @@ export const ProjectCard = styled.div`
         span + span {
             margin-left: 1.5em;
         }
+    }
+
+    @media (max-width: 1120px) {
+        width: 48%;
+        min-height: 176px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 690px) {
+        width: 100%;
     }
 `;
 

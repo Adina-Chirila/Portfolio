@@ -18,9 +18,20 @@ export const AboutContainer = styled(Container)`
         flex: 1;
     }
 
+    .about-img {
+        @media (max-width: 950px) {
+            display: none;
+        }
+    }
+
     .about-title {
         font-size: 35px;
         margin: 0 0 0.5em 0;
+
+        @media (max-width: 950px) {
+            text-align: center;
+            margin: 1em 0;
+        }
     }
 
     p,
@@ -31,10 +42,18 @@ export const AboutContainer = styled(Container)`
     p {
         color: ${colors.whiteAlpha};
         line-height: 1.8;
+
+        @media (max-width: 950px) {
+            text-align: center;
+            line-height: 1.6;
+        }
     }
 
     p:nth-of-type(2) {
         margin: 2em 0 4em 0;
+        @media (max-width: 950px) {
+            margin-top: 0;
+        }
     }
 
     p:nth-of-type(3) {
@@ -44,6 +63,20 @@ export const AboutContainer = styled(Container)`
     .tags {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 950px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1em;
+
+            .tag {
+                margin: 0 0 1em 1em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
     .tag {

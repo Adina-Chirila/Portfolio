@@ -5,6 +5,11 @@ export const CtaBtnWrapper = styled.div`
     width: 180px;
     height: 60px;
     position: absolute;
+
+    @media (max-width: 905px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 `;
 
 export const CtaBtn = styled.button`

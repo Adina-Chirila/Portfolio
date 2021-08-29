@@ -13,6 +13,13 @@ export const ContactContainer = styled(Container)`
     display: flex;
     flex-direction: column;
 
+    h1 {
+        font-size: 35px;
+        @media (max-width: 950px) {
+            text-align: center;
+        }
+    }
+
     .row {
         max-width: 720px;
         display: flex;
@@ -25,7 +32,12 @@ export const ContactContainer = styled(Container)`
         }
 
         textarea {
+            height: 8em;
             resize: none;
+
+            @media (max-width: 950px) {
+                height: 15em;
+            }
         }
 
         input,
@@ -37,18 +49,18 @@ export const ContactContainer = styled(Container)`
             padding: 1em 0.5em;
             border-radius: 5px;
 
-            /* font-family: inherit; */
-
             &:focus {
                 outline: none;
             }
         }
     }
+
+    .center {
+        @media (max-width: 950px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5em 0;
+        }
+    }
 `;
-
-// export const Form = styled(Container)`
-
-//     .row {
-//         border: 1px solid red;
-//     }
-// `;

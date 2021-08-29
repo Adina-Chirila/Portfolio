@@ -47,11 +47,12 @@ const Contact = () => {
                         <textarea
                             name="message"
                             id="message"
-                            rows="8"
                             placeholder="Please enter your message..."
                         />
                     </div>
-                    <BasicCtaBtn type="submit">GET IN TOUCH</BasicCtaBtn>
+                    <div className="center">
+                        <BasicCtaBtn type="submit">GET IN TOUCH</BasicCtaBtn>
+                    </div>
                 </form>
             </ContactContainer>
         </ContactSection>

@@ -15,6 +15,14 @@ export const FlexContainer = styled(Container)`
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 905px) {
+        flex-direction: column-reverse;
+
+        .hero-img {
+            width: 250px;
+        }
+    }
+
     .hero-column {
         flex: 1;
         line-height: 0.9;
@@ -23,8 +31,20 @@ export const FlexContainer = styled(Container)`
             font-size: 45px;
             letter-spacing: 1.5px;
 
+            &:nth-child(3) {
+                margin-bottom: 1em;
+            }
+
             span {
                 color: ${colors.primaryPink};
+            }
+
+            @media (max-width: 1125px) {
+                font-size: 35px;
+            }
+
+            @media (max-width: 565px) {
+                font-size: 25px;
             }
         }
 
@@ -32,10 +52,26 @@ export const FlexContainer = styled(Container)`
             font-size: 35px;
             font-weight: 400;
             color: ${colors.whiteAlpha};
+
+            @media (max-width: 1125px) {
+                font-size: 25px;
+            }
+
+            @media (max-width: 565px) {
+                font-size: 20px;
+                margin: 1.5em 0;
+            }
         }
     }
 
-    .hero-headline:nth-child(3) {
-        margin-bottom: 1em;
+    .hero-text {
+        @media (max-width: 905px) {
+            line-height: 0.6;
+
+            .hero-headline,
+            .secondary-hero-headline {
+                text-align: center;
+            }
+        }
     }
 `;
