@@ -4,7 +4,6 @@ import {
     ProjectsContainer,
     ProjectsSection,
     ProjectsThumbnail,
-    SeeMoreBtn,
     TitleWrapper,
 } from "./Projects.styled";
 import { projectCardsInfo } from "../../data";

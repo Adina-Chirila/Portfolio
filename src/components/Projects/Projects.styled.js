@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Container } from "../../shared/GlobalStyles";
 import { colors } from "../../shared/colors";
 import { dimensions } from "../NavBar/dimensions";
-import { BasicCtaBtn } from "../../shared/Button/Button.styled";
 
 export const ProjectsSection = styled.div`
     min-height: calc(100vh - ${dimensions.navBarHeight});
@@ -11,10 +10,13 @@ export const ProjectsSection = styled.div`
 
 export const ProjectsContainer = styled(Container)`
     min-height: calc(100vh - ${dimensions.navBarHeight});
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
         margin: 0;
-        padding: 0.5em;
+        padding: 0.5em 0;
         font-size: 35px;
 
         @media (max-width: 950px) {
@@ -29,9 +31,7 @@ export const ProjectsContainer = styled(Container)`
         align-items: center;
 
         a {
-            margin-bottom: 1em;
-
-            @media (max-width: 690px) {
+            @media (max-width: 1120px) {
                 margin-bottom: 2em;
             }
         }
@@ -47,17 +47,23 @@ export const ProjectsThumbnail = styled.div`
 
 export const ProjectCard = styled.div`
     width: 30%;
-    min-height: 197px;
-    padding: 1em 1.5em;
+    min-height: 166px;
+    padding: 0.8em 1.5em;
     background-color: ${colors.darkBlue};
     border-radius: 5px;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.25em;
+    display: flex;
+    flex-direction: column;
 
     p {
-        font-size: 12px;
+        font-size: 11px;
         color: ${colors.whiteAlpha};
         line-height: 1.8;
         margin: 1.5em 0 2em;
+
+        @media (max-width: 690px) {
+            font-size: 12px;
+        }
     }
 
     .techs {

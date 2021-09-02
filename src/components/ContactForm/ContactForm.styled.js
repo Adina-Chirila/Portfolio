@@ -12,6 +12,7 @@ export const ContactContainer = styled(Container)`
     min-height: calc(100vh - ${dimensions.navBarHeight});
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     h1 {
         font-size: 35px;

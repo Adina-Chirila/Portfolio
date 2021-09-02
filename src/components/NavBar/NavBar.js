@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { Container } from "../../shared/GlobalStyles";
 import {
     Header,
+    MobileMenu,
+    NavContainer,
     Navigation,
     NavLinksWrapper,
     SocialLinksWrapper,
 } from "./NavBar.styled";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import logo from "../../assets/logo.svg";
-import { dimensions } from "../NavBar/dimensions";
 import { navLinks } from "../../data";
 
 const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <Header>
-            <Container>
-                <Navigation>
-                    <Link to="home" smooth={true} duration={1000} offset={-83}>
-                        <img src={logo} alt="logo" className="logo" />
-                    </Link>
-                    <div className="mobile-menu"></div>
+            <NavContainer>
+                <Link to="home" smooth={true} duration={1000} offset={-83}>
+                    <img src={logo} alt="logo" className="logo" />
+                </Link>
+                <MobileMenu
+                    onClick={toggleMobileMenu}
+                    className={isOpen && "open"}
+                >
+                    <div className="line"></div>
+                </MobileMenu>
+                <Navigation className={isOpen && "open"}>
                     <NavLinksWrapper>
                         {navLinks.map((link, index) => {
                             return (
@@ -28,11 +39,12 @@ const NavBar = () => {
                                     key={index}
                                     to={link}
                                     smooth={true}
-                                    duration={1000}
+                                    duration={800}
                                     offset={-83}
                                     className="navLink"
                                     activeClass="active"
                                     spy={true}
+                                    onClick={toggleMobileMenu}
                                 >
                                     {link}
                                 </Link>
@@ -57,7 +69,7 @@ const NavBar = () => {
                         </a>
                     </SocialLinksWrapper>
                 </Navigation>
-            </Container>
+            </NavContainer>
         </Header>
     );
 };
