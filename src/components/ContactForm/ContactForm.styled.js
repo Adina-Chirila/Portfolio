@@ -26,6 +26,11 @@ export const ContactContainer = styled(Container)`
         display: flex;
         flex-direction: column;
         margin-bottom: 1.5em;
+        position: relative;
+
+        &.error .icon {
+            display: block;
+        }
 
         label {
             margin-bottom: 0.5em;
@@ -53,6 +58,19 @@ export const ContactContainer = styled(Container)`
             &:focus {
                 outline: none;
             }
+        }
+
+        .icon {
+            position: absolute;
+            top: 38px;
+            right: 5px;
+            display: none;
+        }
+
+        .error-text {
+            margin: 0.5em 0 0;
+            padding: 0;
+            font-size: 10px;
         }
     }
 
