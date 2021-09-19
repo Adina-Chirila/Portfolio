@@ -29,6 +29,7 @@ export const FlexContainer = styled(Container)`
 
         .hero-headline {
             font-size: 45px;
+            /* font-size: clamp(25px, 3.4vw, 70px); */
             letter-spacing: 1.5px;
 
             &:nth-child(3) {

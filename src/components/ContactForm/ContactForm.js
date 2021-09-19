@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { ContactContainer, ContactSection } from "./ContactForm.styled";
+import {
+    ContactContainer,
+    ContactSection,
+    Row,
+    SubmitBtn,
+} from "./ContactForm.styled";
 import emailjs from "emailjs-com";
-import { BasicCtaBtn } from "../../shared/Button/Button.styled";
 import { FaExclamationCircle } from "react-icons/fa";
-import Loading from "../Loading/Loading";
 
 const Contact = () => {
     const initialValues = {
@@ -14,6 +17,7 @@ const Contact = () => {
     const [values, setValues] = useState(initialValues);
     const [errors, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false);
+    const [submitResult, setSubmitResult] = useState("");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -52,6 +56,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setIsLoading(true);
 
         emailjs
             .sendForm(
@@ -64,9 +69,15 @@ const Contact = () => {
                 (result) => {
                     console.log(result.text);
                     setValues(initialValues);
+                    setIsLoading(false);
+                    setSubmitResult("Your message was successfully submitted!");
                 },
                 (error) => {
                     console.log(error.text);
+                    setIsLoading(false);
+                    setSubmitResult(
+                        "Something went wrong. Please try again or contact me on LinkedIn."
+                    );
                 }
             );
     };
@@ -75,9 +86,8 @@ const Contact = () => {
         <ContactSection id="contact">
             <ContactContainer>
                 <h1>Contact</h1>
-                {/* <Loading /> */}
                 <form onSubmit={handleSubmit}>
-                    <div className={errors.name ? "row error" : "row"}>
+                    <Row>
                         <label
                             htmlFor="name"
                             className={errors.name && "error"}
@@ -101,8 +111,8 @@ const Contact = () => {
                                 <FaExclamationCircle className="icon" />
                             </>
                         )}
-                    </div>
-                    <div className={errors.name ? "row error" : "row"}>
+                    </Row>
+                    <Row>
                         <label htmlFor="email">Email*</label>
                         <input
                             type="email"
@@ -121,8 +131,8 @@ const Contact = () => {
                                 </span>
                             </>
                         )}
-                    </div>
-                    <div className={errors.name ? "row error" : "row"}>
+                    </Row>
+                    <Row>
                         <label htmlFor="message">Message*</label>
                         <textarea
                             name="message"
@@ -140,11 +150,12 @@ const Contact = () => {
                                 </span>
                             </>
                         )}
-                    </div>
+                    </Row>
+                    {submitResult && <p className="message">{submitResult}</p>}
                     <div className="center">
-                        <BasicCtaBtn type="submit">
-                            {isLoading ? "loading" : "GET IN TOUCH"}
-                        </BasicCtaBtn>
+                        <SubmitBtn type="submit" disabled={isLoading}>
+                            {isLoading ? "Loading..." : "GET IN TOUCH"}
+                        </SubmitBtn>
                     </div>
                 </form>
             </ContactContainer>
