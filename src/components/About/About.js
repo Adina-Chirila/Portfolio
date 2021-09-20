@@ -22,7 +22,7 @@ const About = () => {
                         need in order to develop myself. So I started reading,
                         learning and building projects and in 2020 I succeeded
                         to obtain the Web Development certification from the
-                        Informal School od IT. Currently, I feel pretty
+                        Informal School of IT. Currently, I feel pretty
                         confident that I can be productive in a business
                         environment and turn my passion into a career.
                     </p>

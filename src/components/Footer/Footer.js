@@ -6,7 +6,7 @@ const Footer = () => {
         <FooterSection>
             <span>&copy;</span> 2021 Designed &amp; Built by
             <a
-                href="https://github.com/Adina-Chirila"
+                href="https://www.linkedin.com/in/adina-elena-chirila/"
                 target="_blank"
                 rel="noreferrer"
             >
